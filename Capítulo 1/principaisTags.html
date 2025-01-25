@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principais tags</title>
+</head>
+<body>
+    <!--A tag h1~h6 são fundamentais na estruturação do site
+    ajudando a demarcar títulos e subtítulos. h1 sendo o mais
+    importante e h6 o menos importante.
+    Use apenas um h1 por página, e não pule hn quando fizer
+    sua página, exemplo, pular do h1 diretamente para o h3.
+    Os títulos devem ser descritivos, tudo isso ajuda no SEO.-->
+
+    <!--SEO: Search Engine Otimization, é o conjunto de práticas e técnicas para melhorar
+    a visibilidade do site quando se realiza uma busca em sites como Yahoo e Google.-->
+
+    <!--Exemplo de uso de títulos mostrando a ordem de relevância dos tópicos-->
+    <h1>Meu blog de viagens</h1>
+    <h2>Destinos populares</h2>
+    <h3>Europa</h3>
+    <h4>Itália</h4>
+    <p>Descubra as belezas da Itália.</p>
+
+    <!--A tag p é usada para estruturar blocos de  texto. Ao usar p, tentar fazer com que não
+    tenha blocos muito grandes de texto, também não usar <p> para dar espaçamento, ao invés disso
+    use margin em css.-->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, fugit. Aperiam 
+        ut laudantium reiciendis molestias dolores dolor. Eveniet, vero quas?</p>
+
+    <!--Atributos: Permite a personalização de elementos, vinculação de recursos externos,
+    definição de estilos, etc. São colocados dentro da tag e tem a estrutura nome='valor'-->
+
+    <!--id: Identificador único para o elemento, sendo usado em css e js.-->
+    <h1 id="titulo-principal"></h1>
+    
+    <!--class: especifica um ou mais elementos, podendo ser usado para modificar vários elementos
+    ao mesmo tempo com o css e js. Nesse caso daria para mudar as 2 div ao mesmo tempo.-->
+    <div class="card"></div>
+    <div class="card"></div>
+
+    <!--src: especifica o URL da mídia a ser exibida.-->
+    <img src="caminho/paraImagem/img.jpg" alt="Descrição">
+
+    <!--Âncora: a tag <a> serve para referenciar links, podendo ser usado para links do mesmo
+        site ou site externo.
+    Boas práticas: use descrições boas para o link e não somente clique aqui. Mude a estilização
+    para que o link seja visível e se destaque para o usuário.-->
+
+    <a href="https://www.google.com">Visite o site exemplo</a>
+
+    <!--Note que nesse exemplo foi usado o target='_blank', que serve para que o link seja
+    aberto em nova aba.-->
+    <a href="https:/www.yahoo.com.br" target="_blank">Visite o site exemplos</a>
+
+    <!--Para levar a uma seção específica, pode usar #secao.-->
+    <a href="#secao-especifica">Ir para seção específica</a>
+
+    <!--A tag img serve para implementar imagens no HTML. Utiliza dois atributos: src e alt.
+    src: especifica a URL ou o caminho onde a imagem se encontra.
+    alt: Descrição textual da imagem, muito importante quando a imagem não pode ser vista pelo
+    usuário.
+    Boas práticas: sempre use alt, otimize as imagens para melhorar o tempo de carregamento e
+    utilize técnicas responsivas para que a imagem se adapte a diferentes dispositivos.-->
+
+    <img src=".img/img2.pgn" alt="Descrição da imagem">
+
+    <!--Utilizando o srcset para responsividade-->
+    <img src="img.png" alt="Descrição da imagem" srcset="img-320w.jpg320w, img-480w.jpg480w">
+
+    <!--Listas: usadas para agrupar itens relacionados, são classificados em listas ordenadas e
+    não ordenadas.-->
+
+    <!--Listas ordenadas: organiza os itens em sequência, sendo usada para instruções com passos,
+    classificações etc.-->
+    <ol>
+        <li>Iniciar o computador</li>
+        <li>Abrir o navegador</li>
+        <li>Acessar o site desejado</li>
+    </ol>
+
+    <!--Listas não ordenadas: não tem ordem específica, marcados com bullets, usado quando
+    a ordem não é relevante.-->
+    <ul>
+        <li>Maçã</li>
+        <li>Banana</li>
+        <li>Amora</li>
+    </ul>
+    <!--Boas práticas: é possível aninhar listas dentro de <li>, manter o conteúdo conciso,
+    usar a semântica necessária para cada caso.-->
+    
+    <!--Exemplo de lista com aninhamento-->
+    <ul>
+        <li>Frutas
+            <ul>
+                <li>Amora</li>
+                <li>Maçã</li>
+            </ul>
+        </li>
+        <li>Verdura
+            <ul>
+                <li>Alface</li>
+                <li>Repolho</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!--Elementos de formatação de texto: Permitem destacar partes do texto.-->
+    <!--Strong: Conotação semântica de importância-->
+    <p><strong>Texto importante</strong>, usado para indicar ênfase</p>
+
+    <!--Bold: deixa em negrito, puramente visual-->
+    <p><b>Texto apenas em negrito</b>, sem implicar maior importância</p>
+
+    <!--em e i, ambos deixam em itálico, mas um é usado para ênfase e outro apenas visual-->
+    <p><em>Texto com em</em>, apenas ênfase</p>
+    <p><i>Texto com i</i>, sendo apenas visual</p>
+
+    <!--u: texto sublinhado
+        s: texto riscado
+        mark: texto destacado
+        small: texto em tamanho menor
+        code: para passar trechos de código-->
+    <p><u>Texto sublinhado</u></p>
+    <p><s>Texto riscado</s></p>
+    <p><mark>Texto destacado</mark></p>
+    <p><small>Texto em tamanho menor</small></p>
+    <p><code>for(int i=0;i<5;i++)</code></p>
+
+    <!--Elementos em bloco e inline: define como os elementos ficarão no layout da página.
+    Em bloco: Ocupa todo espaço disponível na largura da página.
+    Inline: Aparecem dentro do bloco de texto e ocupam apenas o espaço para seu conteúdo.-->
+
+    <!--Elemento div: não tem valor semântico, serve para agrupar elementos afim de estiização-->
+    <div>
+        <h1>
+            <p><img src="img.pgn" alt="Exemplo imagem"></p>
+        </h1>
+    </div>
+</body>
+</html>
