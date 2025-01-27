@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoria CSS</title>
+</head>
+<body>
+    <h1>Olá</h1>
+    <h2 class="titulo">Subtítulo</h2>
+    <p id="main-paragrafo">Parágrafo exemplo</p>
+    <p class="ex-font">Esse é um parágrafo para testar a fonte</p>
+    <p class="ex-tags">Usado para mostrar mais exemplos de tags</p>
+    <h3>Teste espaçamentos em CSS</h3>
+</body>
+</html>
+<style>
+    /*Seletores: para escolher a tag que será afetada pela estilização, deve-se usar o seletor,
+    que pode ser pela tag, classe, id e outros pseudo-seletores.*/
+
+    /* TAG*/
+    h1{
+        color: red;
+    }
+
+    /*CLASSE*/
+    .titulo{
+        color: green;
+    }
+
+    /*ID*/
+    #main-paragrafo{
+        color: blue;
+    }
+
+    /*Há 3 modos de aplicar o CSS: inline, interno e externo: .
+    Inline: usado dentro do próprio HTML, não muito usado. 
+    Interno: no mesmo arquivo HTML, mas na tag style, usado quando o projeto é pequeno. 
+    Externo: arquivo externo .css, é necessário usar link ref do seu arquivo HTML. */
+
+    /*É possível estilizar a fonte, as principais propriedades sãoverflow:
+    font-family: Define o tipo da fonte. 
+    font-size: Define o tamanho da fonte. 
+    font-weight: Define a espessura da fonte. 
+    font-style: Define o estilo da fonte.*/
+
+    .ex-font{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 40px;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    /*Outras propriedades muito usadas para estilizar texto são: 
+    Color: Define a cor do texto. 
+    text-align: Serve para alinhar o texto em diferentes posições. 
+    text-decoration: Permite adicionar efeitos como underline, overline,linethrough, etc. 
+    text-transform: controla  capitalização do texto.*/
+
+    .ex-tags{
+        color:aqua;
+        text-align: center;
+        text-decoration: underline;
+        text-transform: uppercase;
+    }
+
+    /*Outras propriedades: 
+    text-shadow: adiciona sombra as letras ou containers. 
+    letter-spacing: permite controlar o espaço entre as letras. 
+    word-spacing: ajusta o espaçamento entre as palavras.*/
+
+    h3{
+        text-shadow: 2px 2px 4px black;
+        letter-spacing: 5px;
+        word-spacing: 5px;
+    }
+
+    /*Reset universal: usado para resetar o margin e padding que a página normalmente tem*/
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    /*Valores para cores: 
+    RGB: usa 3 valores para cores, red, green blue
+    RGBA: usa 3 valores para cores e um quarto para opacidade
+    HEX: cores hexadecimais, tem valores mais específicos e atinge maior diversidade de cores.
+    HSL: usa valores para saturação e luminosidade.*/
+
+    /*Background-image: Serve para colocar uma imagem no fundo da página, é possível mapinular
+    com height e width, além de ter outras propriedades que são importantes aprender*/
+    .dfjso{
+        background-image: url('img.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+</style>
